@@ -1,0 +1,5 @@
+Running.create(:name=> 'Alejandro')
+Running.create(:name=> 'Pablo')
+Running.create(:name=> 'Sofia')
+Running.create(:name=> 'Grecia')
+Running.create(:name=> 'Joel')

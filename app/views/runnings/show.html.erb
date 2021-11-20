@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @running.name %>
+</p>
+
+<p>
+  <strong>One lap:</strong>
+  <%= @running.one_lap %>
+</p>
+
+<p>
+  <strong>Two lap:</strong>
+  <%= @running.two_lap %>
+</p>
+
+<p>
+  <strong>Three lap:</strong>
+  <%= @running.three_lap %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @running.total %>
+</p>
+
+<%= link_to 'Edit', edit_running_path(@running) %> |
+<%= link_to 'Back', runnings_path %>

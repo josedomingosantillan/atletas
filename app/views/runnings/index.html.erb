@@ -1,0 +1,51 @@
+<div class="col-md-12">
+  <div class="ibox-title"><h1>Atletas</h1>
+
+    <br><br>
+
+    <div class="col-md-5">
+      <select name="select_run" id="select_runs" style="width: 30%" class="form-control llenar">
+        <option value="0">Seleccionar...</option>
+        <% @runnings.each do |run| %>
+          <option value="<%= run.id %>"><%= "#{run.name}" %></option>
+        <% end %>
+      </select>
+    </div>
+
+    <button id='one_lap' name="one_lap" class="btn-sm" style="float: right; display: block">1st lap</button>
+    <button id='two_lap' name="two_lap" class="btn-sm" style="float: right; display: none">2nd lap</button>
+    <button id='three_lap' name="three_lap" class="btn-sm" style="float: right; display: none">3rd lap</button>
+    <div class="row">
+      <input type="hidden" id="lapone" value="">
+      <input type="hidden" id="laptwo" value="">
+      <input type="hidden" id="lapthree" value="">
+      <%= button_tag(type: 'submit', class: 'btn btn-primary', id: "btnrt") do %>start
+      <% end %>
+      <div class="chronometer">
+        <div id="screen"><h3>00 : 00 : 00 : 00</h3></div>
+      </div>
+    </div>
+
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class="table footable" id="atletas_lo"><%= render :partial => 'dynamic' %></div>
+
+    <br>
+  </div>
+</div>
+
+<style>
+    #btnrt {
+        float: right;
+        margin-right: 30px;
+    }
+
+    .chronometer {
+        float: right;
+        margin-right: 80px;
+    }
+</style>
+<%#= link_to 'New Running', new_running_path %>

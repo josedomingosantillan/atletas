@@ -1,0 +1,30 @@
+<div class="col-md-12">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>One lap</th>
+      <th>Two lap</th>
+      <th>Three lap</th>
+      <th>Total</th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <% contador = 1 %>
+    <% @runnings.each do |running| %>
+      <tr>
+        <td><%= contador %></td>
+        <td><%= running.name %></td>
+        <td><%= running.one_lap %></td>
+        <td><%= running.two_lap %></td>
+        <td><%= running.three_lap %></td>
+        <td><%= running.total %></td>
+        <% contador = contador + 1 %>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

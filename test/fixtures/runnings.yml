@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  one_lap: MyString
+  two_lap: MyString
+  three_lap: MyString
+  total: MyString
+
+two:
+  name: MyString
+  one_lap: MyString
+  two_lap: MyString
+  three_lap: MyString
+  total: MyString
